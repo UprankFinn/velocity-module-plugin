@@ -1,0 +1,6 @@
+{
+  "id": "proxy-module-plugin",
+  "name": "Proxy Module Plugin",
+  "version": "1.0-SNAPSHOT",
+  "main": "de.uprank.server.proxy.module.plugin.ProxyModulePlugin"
+}
