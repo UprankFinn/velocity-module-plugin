@@ -5,7 +5,7 @@
 ![Status](https://img.shields.io/badge/status-stable-brightgreen)
 ![License](https://img.shields.io/badge/license-MIT-lightgrey)
 
-Ein **modulares, verteiltes Cloud-System** zur Orchestrierung von  
+Ein **modulares velocity module plugin** zur Orchestrierung von  
 **Minecraft Servern (Paper / Spigot / Velocity)** über mehrere Nodes –  
 entwickelt für **Stabilität, Skalierbarkeit und Performance**.
 
@@ -13,22 +13,28 @@ entwickelt für **Stabilität, Skalierbarkeit und Performance**.
 
 ## 🚀 Features
 
-- 🔗 **Peer-to-Peer Node Netzwerk** (kein zentraler Master nötig)
-- ⚡ **Netty-basierte Hochleistungs-Kommunikation**
-- 🧩 **Modulares Multi-Project Setup**
-- 🛡 **Authentifizierte & sichere Node-Verbindungen**
-- 🔄 **Automatisches Node- & Service-Failover**
-- 🎮 **Plugin-API für Server & Proxies**
-- 📡 **Heartbeat & Cluster-State Synchronisation**
+- 🔗 **Live Reloadable** velocity Module Plugin 
 
 ---
 
-## 📦 Projektstruktur
+## 📦 Example Main Class
 
-```text
-cloud/
-├── cloud-api          # Öffentliche API für Plugins & Tools
-├── cloud-protocol     # Packet-, Serializer- & Registry-System
-├── cloud-node         # Standalone Node Application
-├── cloud-plugin       # Minecraft Plugin (Paper / Velocity)
-└── cloud-web-api      # (optional) REST / Web API
+```java
+@Module(id = "motd-module", name = "MOTD Module", version = "1.0-SNAPSHOT")
+public class MotdModule implements VelocityModule {
+
+    private ModuleContext context;
+
+    @Override
+    public void onEnable(ModuleContext ctx) {
+        this.context = ctx;
+
+        this.context.moduleManager().registerListener(this);
+    }
+
+    @Override
+    public void onDisable() {
+
+    }
+
+}
