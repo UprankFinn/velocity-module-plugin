@@ -5,9 +5,7 @@
 ![Status](https://img.shields.io/badge/status-stable-brightgreen)
 ![License](https://img.shields.io/badge/license-MIT-lightgrey)
 
-Ein **modulares velocity module plugin** zur Orchestrierung von  
-**Minecraft Servern (Paper / Spigot / Velocity)** über mehrere Nodes –  
-entwickelt für **Stabilität, Skalierbarkeit und Performance**.
+Ein **modulares velocity module plugin**
 
 ---
 
