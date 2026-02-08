@@ -1,7 +1,7 @@
 # ☁️ velocity module plugin
 
-![Version](https://img.shields.io/badge/version-v1.2.0-blue)
-![Java](https://img.shields.io/badge/java-21%2B-orange)
+![Version](https://img.shields.io/badge/version-v1.0-blue)
+![Java](https://img.shields.io/badge/java-23%2B-orange)
 ![Status](https://img.shields.io/badge/status-stable-brightgreen)
 ![License](https://img.shields.io/badge/license-MIT-lightgrey)
 
